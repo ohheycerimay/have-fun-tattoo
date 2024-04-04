@@ -1,0 +1,16 @@
+/* styles.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components/buttons';
+@import 'tailwindcss/utilities/colors';
+
+/* Your custom CSS styles go here */
+/* Your custom CSS styles */
+
+body {
+    background-color: #f6d00f;
+    color: #9b9f27;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Additional custom styles */
