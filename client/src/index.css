@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./Fonts/Expressa-Serial-Heavy Extra Bold.ttf') format('truetype');
+  /* Add similar rules for other variations of the font (e.g., bold, italic) */
+}
+
+.font-custom {
+  font-family: 'CustomFont', sans-serif; /* Use the font family name specified in Tailwind config */
+}
+
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
