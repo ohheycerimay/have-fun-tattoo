@@ -10,7 +10,7 @@ function NavBar() {
           <li><NavLink to="/" className="hover:text-gray-300">Home</NavLink></li>
           <li><NavLink to="/about" className="hover:text-gray-300">About</NavLink></li>
           <li><NavLink to="/artists" className="hover:text-gray-300">Artists</NavLink></li>
-          <li><NavLink to="/booking" className="hover:text-gray-300">Booking</NavLink></li>
+          <li><NavLink to="/booking" className="hover:text-gray-300">Booking Policies</NavLink></li>
         </ul>
       </div>
     </nav>
