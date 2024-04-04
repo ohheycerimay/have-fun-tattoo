@@ -7,6 +7,7 @@ import About from './components/About';
 import Artists from './components/Artists';
 import Booking from './components/Booking';
 import NavBar from './components/NavBar';
+import Aftercare from './components/Aftercare';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/artists" element={<Artists />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/aftercare" element={<Aftercare />} />
         </Routes>
       </div>
     
