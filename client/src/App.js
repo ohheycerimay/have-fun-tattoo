@@ -19,7 +19,7 @@ function App() {
         <div className="App-header">
           <div className="font-custom">Have Fun Tattoo</div>
         </div>
-        <NavBar />
+        <NavBar user={user} setUser={setUser} />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

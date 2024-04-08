@@ -16,20 +16,19 @@ function Login({setUser}) {
     const handleLogin = (e) => {
         e.preventDefault()
         
-        console.log(login)
-        // fetch('/login', {
-        //     method: 'POST',
-        //     headers: {'Content-Type': 'application/json'},
-        //     body: JSON.stringify(login)
-        // })
-        // .then(r => {
-        //     if (r.ok) {
-        //         r.json().then(setUser)
-        //         history.push('/')
-        //     } else {
-        //         r.json().then(setErrors)
-        //     }
-        // })
+        fetch('/login', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(login)
+        })
+        .then(r => {
+            if (r.ok) {
+                r.json().then(setUser)
+                window.alert("Login successful")
+            } else {
+                r.json().then(console.error)
+            }
+        })
     }
 
     return (
