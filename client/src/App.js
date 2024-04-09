@@ -13,6 +13,15 @@ import Login from './components/Login';
 function App() {
   const [user, setUser] = useState(null)
 
+  useEffect(() => {
+    fetch('/auth')
+    .then(r => {
+      if (r.ok) {
+        r.json().then(setUser)
+      }
+    })
+  }, [])
+
   return (
    
       <div className="App">

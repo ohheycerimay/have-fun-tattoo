@@ -6,4 +6,8 @@ class UsersController < ApplicationController
         session[:user_id] = new_user.id
         render json: new_user, status: :created
     end
+
+    def show
+        render json: User.find(session[:user_id]), status: :ok
+    end
 end
