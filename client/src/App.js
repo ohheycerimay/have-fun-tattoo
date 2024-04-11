@@ -9,6 +9,7 @@ import Artists from './components/Artists';
 import Booking from './components/Booking';
 import NavBar from './components/NavBar';
 import Login from './components/Login';
+import Footer from './components/Footer';
 
 function App() {
   const [user, setUser] = useState(null)
@@ -28,7 +29,7 @@ function App() {
         <div className="App-header">
           <div className="font-custom">Have Fun Tattoo</div>
         </div>
-        <NavBar user={user} setUser={setUser} />
+        <NavBar />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -36,6 +37,7 @@ function App() {
           <Route path="/booking" element={<Booking />} />
           <Route path="/login" element={<Login setUser={setUser} />} />
         </Routes>
+        <Footer user={user} setUser={setUser} />
       </div>
     
   );
