@@ -1,8 +1,17 @@
 // Artists.js
 import React from 'react';
+import { useState, useEffect } from 'react';
 import ArtistCard from './ArtistCard';
 
 function Artists({user}) {
+  // const [artists, setArtists] = useState(null)
+
+  // useEffect(() => {
+  //   fetch('/artists')
+  //   .then(r => r.json())
+  //   .then(setArtists)
+  // }, [])
+
   return (
     <section className="py-16 bg-gray-100">
       <div className="container mx-auto">
