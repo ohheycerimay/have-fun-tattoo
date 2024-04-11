@@ -10,6 +10,7 @@ import Booking from './components/Booking';
 import NavBar from './components/NavBar';
 import Login from './components/Login';
 import Footer from './components/Footer';
+import Aftercare from './components/Aftercare';
 
 function App() {
   const [user, setUser] = useState(null)
@@ -36,6 +37,7 @@ function App() {
           <Route path="/artists" element={<Artists user={user} />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/login" element={<Login setUser={setUser} />} />
+          <Route path="/aftercare" element={<Aftercare />} />
         </Routes>
         <Footer user={user} setUser={setUser} />
       </div>
