@@ -1,7 +1,7 @@
 // ArtistCard.js
 import React from 'react';
 
-function ArtistCard({ name, imageUrl, user }) {
+function ArtistCard({ artist, user }) {
   const handleDelete = () => {
     if (window.confirm("Are you sure you want to delete this artist?")) {
       console.log("OINK")
@@ -10,10 +10,11 @@ function ArtistCard({ name, imageUrl, user }) {
 
   return (
     <div className="bg-gray-200 p-4 rounded-lg shadow-lg">
-      <img src={imageUrl} alt={name} className="w-full rounded-lg" />
+      {/* <img src={imageUrl} alt={name} className="w-full rounded-lg" /> */}
       <div className="mt-4">
-        <h3 className="text-xl font-semibold">{name}</h3>
-        {/* Add additional information about the artist if needed */}
+        <h3 className="text-xl font-semibold">{artist.name}</h3>
+        <span>{artist.insta}</span>
+        <p>{artist.bio}</p>
       </div>
       {user? <button onClick={handleDelete}>Delete</button> : null}
     </div>

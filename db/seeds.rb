@@ -13,8 +13,8 @@ puts "Complete\n "
 
 puts "Creating artists..."
 
-Artist.create(name: "Martin Souza", bio: "Martin isn't a tattoo artist, he shouldn't be on here.", insta: "screaming_skvll")
 Artist.create(name: "Ceri May", bio: "Ceri's a wiz mixologist, but I don't know about giving her a tattoo gun.", insta: nil)
+Artist.create(name: "Martin Souza", bio: "Martin isn't a tattoo artist, he shouldn't be on here.", insta: "screaming_skvll")
 
 puts "Complete\n "
 
