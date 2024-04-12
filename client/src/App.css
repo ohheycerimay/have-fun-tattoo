@@ -32,3 +32,13 @@
 .rotate-3d:hover {
   transform: rotateY(45deg);
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+

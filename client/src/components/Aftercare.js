@@ -3,6 +3,7 @@ import React from 'react'
 function Aftercare(props) {
   return (
     <div>
+      <section className="mt-16 py-16 bg-green-300">
       <div class="aftercare-container">
         <h2 class="aftercare-title">Aftercare Instructions</h2>
         <div class="aftercare-content">
@@ -28,6 +29,7 @@ function Aftercare(props) {
           </p>
         </div>
       </div>
+      </section>
     </div>
   )
 }

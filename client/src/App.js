@@ -15,12 +15,14 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div classname= "App bg-yellow-200">
-      <div className="App-header relative ">
-        <img src={Logo} alt="Logo" className="rounded-full h-32 mt-4 shadow-md z-10 mx-auto mb-4" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20">
-          <div className="font-custom text-3xl">Have Fun Tattoo</div>
-        </div>
-      </div>
+  <div className="App-header relative text-center">
+  <img src={Logo} alt="Logo" className="rounded-full h-28 mt-12 shadow-md z-10 mx-auto mb-12" />
+  <div className="absolute top-0 left-0 right-0 text-cyan-600 font-custom font-bold text-5xl mb-12 ">Have Fun</div>
+  <div className="absolute bottom-0 left-0 right-0 text-cyan-600 font-custom font-bold text-5xl mt-4">Tattoo</div>
+</div>
+
+
+
 
       <NavBar />
       <Routes>
