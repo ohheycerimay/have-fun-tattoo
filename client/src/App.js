@@ -1,18 +1,30 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import './index.css';
+import './App.css';
 import 'daisyui/dist/full.css'
-import './index.css'
-import './App.css'
-import NavBar from './components/NavBar'
-import Home from './components/Home'
-import About from './components/About'
-import Artists from './components/Artists'
-import Booking from './components/Booking'
-import Aftercare from './components/Aftercare'
-import Logo from './Photos/Logo.png'
-import Footer from './components/Footer'
+import Home from './components/Home';
+import About from './components/About';
+import Artists from './components/Artists';
+import Booking from './components/Booking';
+import NavBar from './components/NavBar';
+import Login from './components/Login';
+import Footer from './components/Footer';
+import Aftercare from './components/Aftercare';
 
 function App() {
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    fetch('/auth')
+    .then(r => {
+      if (r.ok) {
+        r.json().then(setUser)
+      }
+    })
+  }, [])
+
   return (
     <div classname="App bg-yellow-200">
       <NavBar />
@@ -27,17 +39,19 @@ function App() {
         </div>
         <div className="absolute bottom-0 left-0 right-0 text-cyan-600 font-custom font-bold text-5xl mt-4">
           Tattoo
-        </div>
-      </div>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/artists" element={<Artists />} />
-        <Route path="/booking" element={<Booking />} />
-        <Route path="/aftercare" element={<Aftercare />} />
-      </Routes>
-      <Footer />
-    </div>
+        </div>  
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/artists" element={<Artists user={user} />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/login" element={<Login setUser={setUser} />} />
+          <Route path="/aftercare" element={<Aftercare />} />
+        </Routes>
+        <Footer user={user} setUser={setUser} />
+  </div>
+  </div>
   )
 }
 

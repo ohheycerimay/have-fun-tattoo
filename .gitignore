@@ -24,6 +24,11 @@
 
 
 # Ignore master key for decrypting credentials and more.
+<<<<<<< HEAD
 /config/master.key
 
 client/node_modules/*
+=======
+/config/master.key 
+/client/node_modules/*
+>>>>>>> main
