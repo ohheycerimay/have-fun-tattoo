@@ -13,7 +13,7 @@ function ArtistCard({ name, imageUrl, user }) {
       <img src={imageUrl} alt={name} className="w-full rounded-lg" />
       <div className="mt-4">
         <h3 className="text-xl font-semibold">{name}</h3>
-        {/* Add additional information about the artist if needed */}
+        
       </div>
       {user? <button onClick={handleDelete}>Delete</button> : null}
     </div>

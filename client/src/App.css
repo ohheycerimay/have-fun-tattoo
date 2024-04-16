@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #22d3ee;
+  background-color:#feee0c;
  
 }
 
@@ -28,3 +28,20 @@
     transform: rotate(360deg);
   }
 }
+
+.rotate-3d:hover {
+  transform: rotateY(45deg);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+
+

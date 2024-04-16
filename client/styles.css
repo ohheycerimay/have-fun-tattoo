@@ -1,8 +1,10 @@
 /* styles.css */
 
 @import 'tailwindcss/base';
-@import 'tailwindcss/components/buttons';
-@import 'tailwindcss/utilities/colors';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'daisyui/dist/full.css';
+
 
 /* Your custom CSS styles go here */
 /* Your custom CSS styles */
