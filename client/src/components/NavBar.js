@@ -14,7 +14,7 @@ function NavBar() {
 
   return (
     <nav className="fixed top-5 left-5 z-50">
-    <button className="bg-pink-500 h-24 w-24 rounded-full border-white border-4 shadow-lg flex items-center justify-center focus:outline-none" onClick={toggleMenu}>
+    <button className="bg-pink-500 h-28 w-28 rounded-full border-white border-4 shadow-lg flex items-center justify-center focus:outline-none" onClick={toggleMenu}>
       <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
