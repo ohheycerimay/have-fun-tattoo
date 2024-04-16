@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './index.css';
 import './App.css';
@@ -7,9 +8,22 @@ import About from './components/About';
 import Artists from './components/Artists';
 import Booking from './components/Booking';
 import NavBar from './components/NavBar';
+import Login from './components/Login';
+import Footer from './components/Footer';
 import Aftercare from './components/Aftercare';
 
 function App() {
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    fetch('/auth')
+    .then(r => {
+      if (r.ok) {
+        r.json().then(setUser)
+      }
+    })
+  }, [])
+
   return (
    
       <div className="App">
@@ -20,10 +34,12 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/artists" element={<Artists />} />
+          <Route path="/artists" element={<Artists user={user} />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/login" element={<Login setUser={setUser} />} />
           <Route path="/aftercare" element={<Aftercare />} />
         </Routes>
+        <Footer user={user} setUser={setUser} />
       </div>
     
   );
