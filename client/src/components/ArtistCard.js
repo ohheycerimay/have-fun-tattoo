@@ -4,7 +4,13 @@ import React from 'react';
 function ArtistCard({ artist, user }) {
   const handleDelete = () => {
     if (window.confirm("Are you sure you want to delete this artist?")) {
-      console.log("OINK")
+      fetch(`/artists/${artist.id}`, {method: 'DELETE'})
+        .then(r => {
+          if (r.ok) {
+            window.location.reload()
+          } else {}
+            r.json().then(console.error)
+        })
     }
   }
 
