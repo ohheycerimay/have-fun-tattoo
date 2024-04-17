@@ -12,7 +12,7 @@ function Artists({user}) {
     .then(setArtists)
   }, [])
 
-  const renderedArtists = artists.map(artist => <ArtistCard artist={artist} user={user} />)
+  const renderedArtists = artists?.map(artist => <ArtistCard artist={artist} user={user} />)
 
   return (
     <section className="py-16 bg-gray-100">
