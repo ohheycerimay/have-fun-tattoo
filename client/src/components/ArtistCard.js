@@ -22,7 +22,7 @@ function ArtistCard({ artist, user }) {
         <span>{artist.insta}</span>
         <p>{artist.bio}</p>
       </div>
-      {user? <button onClick={handleDelete}>Delete</button> : null}
+      {user? <button onClick={handleDelete}>❌ Delete Artist</button> : null}
     </div>
   );
 }
