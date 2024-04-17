@@ -20,7 +20,19 @@ function Artists({user}) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(formData)
+    
+    fetch('/artists/', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(formData)
+    })
+      .then(r => {
+        if (r.ok) {
+          window.location.reload()
+        } else {
+          r.json().then(console.error)
+        }
+      })
   }
 
   useEffect(() => {
