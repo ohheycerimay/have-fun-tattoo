@@ -13,7 +13,7 @@ function Artists({user}) {
   // }, [])
 
   return (
-    <section className="mt-16 py-16 bg-green-300 text-center">
+    <section className="artist-container mt-16 py-16 text-center">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-8">Our Artists</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">

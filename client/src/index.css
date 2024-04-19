@@ -19,21 +19,7 @@ body {
   font-family: 'CustomFont', sans-serif; /* Use the font family name specified in Tailwind config */
 }
 
-.aftercare-text {
-  font: inherit;
-  color: black;
-  text-align: center;
-  font-weight: bold; /* Add font-weight to make text bold */
-  font-size: 1.25em;
-}
 
-.aftercare-title {
-  font: inherit;
-  color: black;
-  text-align: center;
-  font-size: 2rem; /* Increase font size for the title */
-  font-weight: bold; /* Add font-weight to make title bold */
-}
 
 
 /* code {

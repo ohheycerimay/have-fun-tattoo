@@ -10,9 +10,8 @@
 /* Your custom CSS styles */
 
 body {
-    background-color: #f6d00f;
-    color: #9b9f27;
-    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f4e0;
+    overscroll-behavior: none;
 }
 
 /* Additional custom styles */

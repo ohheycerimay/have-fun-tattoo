@@ -4,12 +4,12 @@ function Aftercare(props) {
   return (
     <div className="aftercare-boss-container border-radius-30">
       <div>
-        <section className="mt-12 py-16 bg-green-300">
+        <section className="mt-6 py-16 ">
           <div className="aftercare-container mb-12 max-w-4xl mx-auto">
           
-            <div className="aftercare-paper bg-white p-8 rounded-lg shadow-lg">
+            <div className="aftercare-paper bg-white p-8 rounded-lg shadow-lg text-black">
             <h2 className="aftercare-title text-4xl font-bold mb-6">TATTOO AFTERCARE</h2>
-              <div className="aftercare-content">
+              <div className="aftercare-content font-bold">
                 <p className="aftercare-text mb-4">
                   Please leave the bandage on overnight. This will help protect your tattoo from sticking to clothing and bed sheets overnight, and also prevent it from drying out and starting to scab early. In the morning, promptly remove the bandage and wash with hot water and mild soap. Wash gently with your fingertips and rinse with hot water. Pat it dry with a clean paper towel. Try to refrain from using bath towels if possible.
                 </p>
