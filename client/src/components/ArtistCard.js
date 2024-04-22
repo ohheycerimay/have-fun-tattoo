@@ -19,7 +19,11 @@ function ArtistCard({ artist, user }) {
       {/* <img src={imageUrl} alt={name} className="w-full rounded-lg" /> */}
       <div className="mt-4">
         <h3 className="text-xl font-semibold">{artist.name}</h3>
-        <span>{artist.insta}</span>
+        <div>
+          <span>
+            {artist.insta? <a href={`https://instagram.com/${artist.insta}/`} target='blank' >Instagram</a> : null}
+          </span>
+        </div>
         <p>{artist.bio}</p>
       </div>
       {user? <button onClick={handleDelete}>❌ Delete Artist</button> : null}
